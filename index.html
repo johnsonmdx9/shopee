@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0; url=shopeevn://reactPath?smtt=9&path=shopee%2FTRANSFER_PAGE&navigate_url='https%3A%2F%2Fshopee.vn%2Fthoitrangnammenswear%3F595030212%26tab%3D0'&tab=buy">
   <script>
-    window.location.href = "shopeevn://reactPath?smtt=9&path=shopee%2FTRANSFER_PAGE&navigate_url='https%3A%2F%2Fshopee.vn%2Fthoitrangnammenswear%3F595030212%26tab%3D0'&tab=buy";
+    window.location = "shopeevn://reactPath?smtt=9&path=shopee%2FTRANSFER_PAGE&navigate_url='https%3A%2F%2Fshopee.vn%2Fthoitrangnammenswear%3F595030212%26tab%3D0'&tab=buy";
+    setTimeout(function() {
+      window.location.href = "https://shopee.vn/thoitrangnammenswear?595030212&tab=0";
+    }, 1000); // Fallback sau 1 giây nếu Deep Link không hoạt động
   </script>
 </head>
 <body>
